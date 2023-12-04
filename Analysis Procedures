@@ -1,0 +1,48 @@
+INTRODUCTION
+
+What can the store do better to make more sales and through what means? The task is to create an analysis and derive insights from the 2022 store sales and share them with stakeholders, so we can plan better for 2023.
+
+After loading the data set into an Excel worksheet, the following metrics were what I had written out to help me get those insights.
+
+Tool used:
+
+Microsoft Excel
+
+Compare the sales and orders using a single chart.
+• Which month got the highest sales and orders?
+• Who purchased more — men or women in 2022?
+• What is the different order status in 2022?
+• List the top 5 states that contribute to the sales.
+• Relation between age and gender based on a number of orders.
+• Which channel is contributing to maximum sales?
+Highest selling category? etc.
+
+Data cleansing starts now. The original data should be copied to a new worksheet, which will serve as our working sheet. Numerous disruptive elements may be found in the dataset. Verify that the header rows’ spelling is correct.
+
+P.S. You may also color-fill the header rows to make a noticeable distinction.
+
+Applying filters to all of the cells is the best and first approach to handle them. We can quickly observe which data items exist in each row thanks to the filters that have been set up.
+
+Men and women have different spellings in the Gender column, as can be seen. The home tab’s search and replace button makes it simple to fix this.
+
+DATA ANALYSIS
+I constructed my pivot tables in this section to aid in more thorough analysis. Doing this on a fresh sheet will give you more room to work with. First, we need to compare sales to orders, and then we need to display the month with the greatest sales. I combined them on a pivot table, using the newly generated “month” column in the Row part and the “sum of amount and count of ID” in the values area, to produce a column chart.
+
+
+To determine which gender made the most purchases is the second inquiry. The “gender” column on the pivot table corresponds to the row, and the “sum of amount” to the values section.
+
+
+The third was used to display the store’s order status for the merchandise. The’status’ column would be in the Row part and the ‘orderID’ in the Values section.
+
+
+The top 5 states are up next. The “ship-state” column is placed in the Row section for this, while the “sum of amount” is placed in the Values part. Sort may be chosen with a right-click on the newly constructed pivot table. Sort the results downward. You may restrict or raise the number you wish to set your data to by selecting ‘filter’ from the context menu when you right-click on the state column, then choosing ‘top 10’. I would choose 5 if it were necessary.
+
+The Age and Gender column would come next. ‘Gender’ is inserted in the column part, ‘Age-group’ in the rows section, and ‘Count of OrderID’ in the values section to accomplish this. Choose a cell in the pivot table by clicking on it, choosing “show value as,” and then choosing “% of grand total.”
+
+The channel category comes last. The ‘Channels’ in the Row section and the ‘Count of OrderID’ in the Values section are included to do this. Once more, right-click, choose “show value as,” and then choose “% of the total.”
+
+DASHBOARD VISUALIZATION
+
+We can now combine all of our tables and charts after they have been prepared. To do this, we make a new sheet and give it the name “Dashboard.” In this sheet, put all of our charts. I’ll provide the stakeholders with this project’s final appearance. In order to make it easier to navigate and display stats for each subcategory (Month, Channel, Category), I have created 3 slicers. This is the finished appearance after connecting the slicers to the dashboard.
+
+For full documentation and images, click here: https://medium.com/@osagiesolomix/vrinda-store-analysis-2022-c8185d1a84ec
